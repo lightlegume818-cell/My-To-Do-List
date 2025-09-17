@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: helvetica;
+  background: linear-gradient(to top left, black, grey);
+}
+    
+.container{
+  text-align: center;
+  background-color: black;
+  color: rgb(28, 28, 248);
+  margin: 10px auto;
+  width: 500px;
+  min-height: 400px;
+  margin-top: 20px ;
+  border-radius: 10px ;
+  border: 1px solid white;
+  
+}
+
+
+
+h1{
+  color: rgb(28, 28, 248);
+}
+
+#input{
+  padding: 10px 20px;
+  border-radius: 5px;
+
+}
+
+#add{
+  position: relative;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 1;
+
+}
+#add::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(3, 252, 3);
+  z-index: -1;
+  transition: .3s;
+}
+#add:hover::before{
+  width: 100%;
+}
+ul{
+  list-style: none;
+}
+li{
+   padding: 10px;
+   background-color:  black;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid white;
+   margin-right: 30px;
+   margin-top: 10px;
+
+}
+.delett{
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  
+ .container{
+  width: 90%;
+  max-width: 400px;
+ }
+
+
+}
+
+
